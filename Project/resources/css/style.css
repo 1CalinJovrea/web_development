@@ -81,33 +81,145 @@ h2:after {
     margin-top: 30px;
 }
 
+
+/* ---------------------------------------------- */
+/* BUTTONS */
+/* ---------------------------------------------- */
+
+
+.btn:link,
+.btn:visited,
+input[type=submit]{
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: 300;
+    text-decoration: none;
+    border: 1px solid #FFE800;
+    border-radius: 200px;
+    -webkit-transition: background-color 0.2s, border 0.2s, color 0.2s;
+    transition: background-color 0.2s, border 0.2s, color 0.2s;
+}
+
+.btn-full:link, 
+.btn-full:visited,
+input[type=submit]{
+    background-color: #FFE800;
+    border: 1px solid #FFE800;
+    color: #000;
+    margin-right: 15px;
+}
+
+.btn-ghost:link,
+.btn-ghost:visited {
+    border: 1px solid #FFE800;
+    color: #FFE800;
+}
+
+.btn:hover,
+.btn:active,
+input[type=submit]:hover,
+input[type=submit]:active {
+    background-color: #FFFF00;   
+    color: #000;
+}
+
+.btn-full:hover 
+.btn-full:active,
+input[type=submit]{
+    border: 1px solid #FFE800;
+}
+
+.btn-ghost:hover,
+.btn-ghost:active {
+    border: 1px solid #FFE800;
+}
+
+
 /* ---------------------------------------------- */
 /* HEADER */
 /* ---------------------------------------------- */
+
+
+header {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url(img/dew.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(img/dew.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    background-attachment: fixed;
+}
+
+.hero-text-box {
+    position: absolute;
+    width: 1140px;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    color: #fff;
+}
+
 
 .logo {
     height: 100px;
     width: auto;
     float: left;
     margin-top: 20px;
+    color: #fff;
+}
+
+/* MAIN NAVI */
+.main-nav {
+    float: right;
+    list-style: none;
+    margin-top: 60px;
+}
+
+.main-nav li {
+    display: inline-block;
+    margin-left: 30px;
+    margin-right: 70px;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited{
+    padding: 8px 0px;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90%;
+    border-bottom: 2px solid transparent;
+    -webkit-transition: border-bottom 0.2s;
+    transition: border-bottom 0.2s;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active {
+    border-bottom: 2px solid #FFE800;
 }
 
 /* ---------------------------------------------- */
 /* BODY */
 /* ---------------------------------------------- */
 
-#photo-previes{
+
+.section-uploadphoto {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+#photo-preview{
+    width: auto;
+    height: auto;
+    border: 1px solid #aaa;
     margin-top: 50px;
     margin-bottom: 50px;
+    position: relative;
+    left: 2000px;
+    top: 500px;
 }
 #upload_photo_button{
-    margin-left: 400px;
+    margin-left: 100px;
 }
-.section-uploadphoto {
-    margin-top: 200px;
-    margin-bottom: 300px;
-}
-
 /* ---------------------------------------------- */
 /* FOOTER */
 /* ---------------------------------------------- */
